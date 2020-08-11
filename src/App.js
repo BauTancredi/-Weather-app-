@@ -9,6 +9,10 @@ function App() {
       <div className="container">
         <SearchBar />
       </div>
+      <div className="d-flex justify-content-center">
+        <h2 className="mr-5">Forecast</h2>
+        <h2>Actual Time</h2>
+      </div>
     </div>
   );
 }

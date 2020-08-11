@@ -23,17 +23,18 @@ body {
 h1 {
   color: white;
   font-size: 5rem;
-
   padding-top: 4rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+h2 {
+  color: white;
+  cursor: pointer;
 }
 
 form {
   position: relative;
-}
-
-.form-container {
-  align-items: center;
-  height: 80vh;
 }
 
 .form-input {

@@ -1,6 +1,7 @@
 import React from "react";
 
 import SearchBar from "./components/SearchBar";
+import WeatherCard from "./components/WeatherCard";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <h2 className="mr-5">Forecast</h2>
         <h2>Actual Time</h2>
       </div>
+      <WeatherCard />
     </div>
   );
 }

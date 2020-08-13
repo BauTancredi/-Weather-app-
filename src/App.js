@@ -2,6 +2,7 @@ import React from "react";
 
 import SearchBar from "./components/SearchBar";
 import WeatherCard from "./components/WeatherCard";
+import ForecastCard from "./components/ForecastCard";
 
 function App() {
   return (
@@ -14,7 +15,26 @@ function App() {
         <h2 className="mr-5">Forecast</h2>
         <h2>Actual Time</h2>
       </div>
-      <WeatherCard />
+      {/* <WeatherCard /> */}
+      <div className="container forecast ">
+        <div className="row justify-content-center ">
+          <div className="col-lg-2">
+            <ForecastCard />
+          </div>
+          <div className="col-lg-2">
+            <ForecastCard />
+          </div>
+          <div className="col-lg-2">
+            <ForecastCard />
+          </div>
+          <div className="col-lg-2">
+            <ForecastCard />
+          </div>
+          <div className="col-lg-2">
+            <ForecastCard />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

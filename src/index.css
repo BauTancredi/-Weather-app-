@@ -15,7 +15,7 @@ body {
   line-height: 1.5;
   background: linear-gradient(#0075ff, #39b8ff);
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -32,6 +32,8 @@ h2 {
   color: white;
   cursor: pointer;
 }
+
+/* SearchBar */
 
 form {
   position: relative;
@@ -64,11 +66,7 @@ form {
   left: 1rem;
 }
 
-@media (min-width: 600px) {
-  .form-input {
-    width: 45rem;
-  }
-}
+/* WeatherCard */
 
 .card-transparency {
   background-color: rgba(255, 255, 255, 0.2);
@@ -91,6 +89,10 @@ h4 {
 }
 
 @media (min-width: 600px) {
+  .form-input {
+    width: 45rem;
+  }
+
   .img-size {
     width: 30%;
     margin: 2rem auto;
@@ -101,5 +103,31 @@ h4 {
   .img-size {
     width: 19%;
     margin: 2rem auto;
+  }
+}
+
+@media (min-width: 980px) {
+  h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .img-size {
+    width: 100%;
+    margin: 2rem auto;
+  }
+
+  .card-transparency {
+    width: 15rem;
+    padding: 2rem;
+    margin-right: 5rem;
+  }
+
+  body {
+    height: 100vh;
   }
 }

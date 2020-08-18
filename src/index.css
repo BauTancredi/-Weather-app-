@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  /* height: 100%; */
 }
 
 *,
@@ -15,7 +16,7 @@ body {
   line-height: 1.5;
   background: linear-gradient(#0075ff, #39b8ff);
   background-repeat: no-repeat;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -105,7 +106,7 @@ h4 {
     margin: 2rem auto;
   }
 }
-
+/* 
 @media (min-width: 980px) {
   h3 {
     font-size: 2rem;
@@ -130,4 +131,4 @@ h4 {
   body {
     height: 100vh;
   }
-}
+} */

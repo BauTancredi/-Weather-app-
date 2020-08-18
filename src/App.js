@@ -3,6 +3,7 @@ import axios from "axios";
 
 import SearchBar from "./components/SearchBar";
 import WeatherCard from "./components/WeatherCard";
+import Error from "./components/Error";
 
 function App() {
   const [search, setSearch] = useState({ city: "" });
@@ -22,26 +23,26 @@ function App() {
           url,
         };
 
-        const result = await axios(options);
+        try {
+          const result = await axios(options);
 
-        setResult(result.data);
-        setCallApi(false);
-
-        // Add 400
-        if (result.cod === "404") {
-          setError(true);
-        } else {
+          setResult(result.data);
+          setCallApi(false);
           setError(false);
+        } catch (error) {
+          setError(true);
+          setCallApi(false);
         }
       }
     };
 
     fetchData();
+    //eslint-disable-next-line
   }, [callApi]);
 
   let component;
   if (error) {
-    // component = <Error error={error} />;
+    component = <Error error={error} />;
   } else {
     component = <WeatherCard result={result} />;
   }

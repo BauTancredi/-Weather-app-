@@ -106,29 +106,7 @@ h4 {
     margin: 2rem auto;
   }
 }
-/* 
-@media (min-width: 980px) {
-  h3 {
-    font-size: 2rem;
-    margin-top: 1rem;
-  }
 
-  h4 {
-    font-size: 2rem;
-  }
-
-  .img-size {
-    width: 100%;
-    margin: 2rem auto;
-  }
-
-  .card-transparency {
-    width: 15rem;
-    padding: 2rem;
-    margin-right: 5rem;
-  }
-
-  body {
-    height: 100vh;
-  }
-} */
+.error {
+  color: white;
+}

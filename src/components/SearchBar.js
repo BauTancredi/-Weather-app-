@@ -16,7 +16,7 @@ const SearchBar = ({ search, setSearch, setCallApi }) => {
 
   return (
     <div className="d-flex justify-content-center">
-      <form onSubmit={(e) => handleSubmit(e)}>
+      <form onSubmit={(e) => handleSubmit(e)} autoComplete="off">
         <div className="form-group">
           <span className="fa fa-search form-control-feedback"></span>
           <input
@@ -27,6 +27,7 @@ const SearchBar = ({ search, setSearch, setCallApi }) => {
             className="form-input form-control fa fa-search"
             placeholder="City"
             name="city"
+            autoComplete="off"
           />
         </div>
         <div className="form-group d-flex justify-content-center">

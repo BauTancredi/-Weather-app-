@@ -4,12 +4,14 @@ import axios from "axios";
 import SearchBar from "./components/SearchBar";
 import WeatherCard from "./components/WeatherCard";
 import Error from "./components/Error";
+import Loader from "./components/Loader";
 
 function App() {
   const [search, setSearch] = useState({ city: "" });
   const [callApi, setCallApi] = useState(false);
   const [result, setResult] = useState({});
   const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const { city } = search;
 
@@ -24,11 +26,13 @@ function App() {
         };
 
         try {
+          setLoading(true);
           const result = await axios(options);
 
           setResult(result.data);
           setCallApi(false);
           setError(false);
+          setLoading(false);
         } catch (error) {
           setError(true);
           setCallApi(false);
@@ -57,7 +61,7 @@ function App() {
           setCallApi={setCallApi}
         />
       </div>
-      {component}
+      {loading ? <Loader /> : component}
     </Fragment>
   );
 }

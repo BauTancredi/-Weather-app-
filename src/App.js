@@ -36,6 +36,7 @@ function App() {
         } catch (error) {
           setError(true);
           setCallApi(false);
+          setLoading(false);
         }
       }
     };

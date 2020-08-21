@@ -9,7 +9,6 @@ import thunderstorm from "../images/thunderstorm.svg";
 
 const WeatherCard = ({ result }) => {
   const { name } = result;
-  console.log(result);
 
   if (!name) return null;
 

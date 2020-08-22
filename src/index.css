@@ -135,3 +135,7 @@ h4 {
     transform: rotate(360deg);
   }
 }
+
+.error {
+  margin-top: 9rem;
+}

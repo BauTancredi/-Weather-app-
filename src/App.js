@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       if (callApi) {
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ac8456119b3f1a8f787fc2c61b2ac680`;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ac8456119b3f1a8f787fc2c61b2ac680`;
 
         const options = {
           method: "GET",
